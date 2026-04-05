@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    background-color: rgb(253, 253, 253);
+    padding: 20px;
+}
+h1{
+    font-family: cursive;
+}
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 2px solid black;
+    background: white;
+}
+header{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 20px 30px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.logo-box{
+    width: 40px;
+    height: 40px;
+    background: black;
+}
+nav a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+.title-section{
+    border-bottom: 2px solid black;
+    padding: 40px 20px;
+    text-align: center;
+}
+.title-section h1{
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.subtitle{
+    padding: 18px;
+    color: grey;
+}
+.main-content{
+    grid-template-columns: 1fr 1fr 1fr;
+    border-bottom: 2px solid black;
+    display: grid;
+}
+.section{
+    padding: 25px;
+    border-right: 2px solid black;
+}
+.section:last-child{
+    border-right: none;
+}
+.section h2{
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-family: cursive;
+}
+.project-lists {
+    list-style: none;
+}
+.project-lists li{
+    padding: 12px 0;
+    border-bottom: 2px solid black;
+}
+
+.work-experience{
+    margin-bottom: 30px ;
+    border-bottom: 2px solid black;
+}
+.work-experience:last-child{
+    border-bottom: none;
+}
+.work-experience h3{
+    margin-bottom: 8px;
+    font-family: cursive;
+}
+.blue-link{
+    color: lightseagreen;
+    text-decoration: none;
+    font-weight: 500;
+}
+.education p{
+    margin-bottom: 10px;
+}
+.courses{
+    margin-top: 15px;
+}
+.courses ul{
+    list-style: none;
+}
+.courses li{
+    font-size: 15px;
+    padding: 6px 0;
+}
+.reviews{
+    background: white;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+.reviews h2{
+    font-size: 25px;
+    margin-bottom: 25px;
+    font-family: cursive;
+}
+.review-grid{
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.review-card{
+    border-radius: 25px;
+    width: 280px;
+    min-height: 160px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 20px;
+    border: 2px solid black;
+}
+.review-text{
+    margin-bottom: 15px;
+}
+.reviewer{
+    font-size: 14px;
+    color: gray;
+}
+footer{
+    text-align: center;
+    font-size: 14px;
+    padding: 20px;
+}
+@media (max-width: 768px){
+    .main-content{
+        grid-template-columns: 1fr;
+    }
+    .section{
+        border-right: none;
+        border-bottom: 2px solid black;
+    }
+    .section:last-child{
+        border-bottom: none;
+    }
+}
+
